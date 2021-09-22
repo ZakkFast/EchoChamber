@@ -11,7 +11,10 @@ ECHO CHAMBER
 
 Description:
 ```
-A social media platform that uses node, express, mysql, sequelize, and handlebars as the primary tools to connect users in an anonymous form. Users can create posts and then vote on posts to decide what makes it to the top of the feed. Users will have their own profiles to review their post history and can also comment on posts.
+A social media platform that uses node, express, mysql, sequelize, and handlebars as the primary 
+tools to connect users in an anonymous form. Users can create posts and then vote on posts to decide 
+what makes it to the top of the feed. Users will have their own profiles to review their post history 
+and can also comment on posts.
 ```
 
 User Story: 
@@ -27,7 +30,8 @@ Workflow:
 GIVEN a social media site
 
 WHEN I visit the site for the first time
-THEN I am presented with the homepage, which has exsiting posts. I have navigation links to the homepage, login and signup pages.
+THEN I am presented with the homepage, which has exsiting posts. I have navigation links to the homepage, 
+login and signup pages.
 
 WHEN I click the Home link
 THEN I am taken to the homepage
@@ -66,7 +70,8 @@ WHEN I am on a post's page
 THEN I can click the create comment button.
 
 WHEN I click the create comment button
-THEN I am taken to a page with the post name and body, and a text field for my comment with a post comment button
+THEN I am taken to a page with the post name and body, and a text field for my comment with a post 
+comment button
 
 WHEN I click the post comment button
 THEN I am redirected to the post's page and my comment is added
