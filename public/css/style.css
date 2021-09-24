@@ -1,0 +1,213 @@
+* {
+  transition: 0.25s;
+}
+
+.filter-choices {
+  border-bottom: solid 1px #bdbdbd;
+  border-left: solid 1px #bdbdbd;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+}
+
+.writing-area {
+  height: 33vh !important;
+  background: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  color: #212121 !important;
+  cursor: pointer !important;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  border-radius: 5px !important;
+}
+
+.reading {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: #212121;
+  cursor: pointer;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-radius: 5px;
+}
+
+.filter-choices:hover {
+  background: rgba(238, 238, 238, 0.49);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #212121;
+  cursor: pointer;
+}
+
+.articles:hover {
+  background: rgba(238, 238, 238, 0.49);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #212121;
+  cursor: pointer;
+}
+
+.articles:hover .article-text {
+  color: #212121;
+}
+
+.chance {
+  font-family: "BlackChancery", sans-serif;
+}
+
+.charter {
+  font-family: "Charter", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto Slab", serif;
+}
+
+.three {
+  font-weight: 300;
+}
+
+.four {
+  font-weight: 400;
+}
+
+.card-panel {
+  margin: 0px;
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+.zero {
+  padding: 0;
+  margin: 0;
+}
+
+.p-1 {
+  padding: 2.5rem !important;
+}
+
+.first-article {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.m-1 {
+  margin: 2.5rem;
+}
+
+.m-1-top {
+  margin-top: 1rem;
+}
+
+.m-25-top {
+  margin-top: 2.5rem;
+}
+
+.m-5-bottom {
+  margin-bottom: 5rem;
+}
+
+.m-25-bottom {
+  margin-bottom: 2.5rem;
+}
+.m-5-top {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.post-box {
+  background-color: #eee;
+}
+
+.post-bar {
+  width: 10%;
+}
+
+.icon {
+  padding: 5px;
+}
+
+.card-action.a {
+  color: #039be5;
+}
+
+.corner-med {
+  border-radius: 5px;
+}
+
+.border-grey {
+  border: solid 1px #bdbdbd;
+}
+
+.bg-video {
+  background: url("../video/matrix.mp4");
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+#videoBG {
+  position: fixed;
+  z-index: -1;
+  opacity: 0.2;
+  height: 100vh;
+  width: 100vw;
+  object-fit: fill;
+}
+
+#videoBG-ink {
+  position: fixed;
+  z-index: -1;
+  opacity: 1;
+  height: 100vh;
+  width: 100vw;
+  object-fit: fill;
+}
+
+#editor {
+  color: #eeeeee;
+  font-family: "Charter", sans-serif;
+  border-radius: 5px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background: rgba(238, 238, 238, 0.66);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #212121;
+}
+
+.ql-toolbar .ql-stroke {
+  fill: none;
+  stroke: #eeeeee !important;
+  border-radius: 5px;
+}
+
+.ql-snow {
+  border-radius: 5px;
+}
+
+.ql-toolbar .ql-fill {
+  fill: #eeeeee !important;
+  stroke: none;
+  border-radius: 5px;
+}
+
+.ql-toolbar .ql-picker {
+  color: #eeeeee !important;
+  border-radius: 5px;
+}
+
+.ql-picker-options {
+  background: #eeeeee;
+  border-radius: 5px;
+  color: #424242;
+}
