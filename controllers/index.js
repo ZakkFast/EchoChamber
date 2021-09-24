@@ -5,7 +5,7 @@ const homeRoutes = require("./homeRoutes");
 const profileRoutes = require("./profileRoutes");
 
 
-// router.use('/', homeRoutes);
+router.use('/', homeRoutes);
 // router.use('/api', apiRoutes);
 // router.use('/', profileRoutes);
 
