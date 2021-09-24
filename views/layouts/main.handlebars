@@ -29,9 +29,14 @@
                 <a href="/" class="brand-logo chance grey-text text-darken-4">Echo Chamber</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down roboto four">
+                    {{#if logged_in}}
+                    <li id="nav-profile"><a class="grey-text text-darken-4" href="/profile">Profile</a></li>
                     <li id="nav-home"><a class="grey-text text-darken-4" href="/">Home</a></li>
-                    <li id="nav-signup"><a class="grey-text text-darken-4" href="/signup">Sign Up</a></li>
+                    <li id="nav-logout"><a class="grey-text text-darken-4" href="/">Logout</a></li>
+                    {{else}}
                     <li id="nav-login"><a class="grey-text text-darken-4" href="/login">Login</a></li>
+                    <li id="nav-signup"><a class="grey-text text-darken-4" href="/signup">Sign Up</a></li>
+                    {{/if}}
                 </ul>
             </div>
         </nav>
