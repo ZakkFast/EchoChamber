@@ -1,0 +1,26 @@
+[
+  {
+    "user_name": "Evan",
+    "email": "evan@hotmail.com",
+    "password": "password",
+    "karma": 123
+  },
+  {
+    "user_name": "Elliot",
+    "email": "elliot@gmail.com",
+    "password": "password",
+    "karma": 515
+  },
+  {
+    "user_name": "Leona",
+    "email": "Leona@aol.com",
+    "password": "password",
+    "karma": 5456
+  },
+  {
+    "user_name": "Zakk",
+    "email": "Zakk@gmail.com",
+    "password": "password",
+    "karma": 45645
+  }
+]
