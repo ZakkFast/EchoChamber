@@ -91,5 +91,10 @@ Materialize CSS
 Mulzr (TBD)
 ```
 
-Wireframe:
-<img src="./assets/images/echoChamber.jpg">
+Wireframe:<br>
+Homepage
+<img src="./assets/images/Homepage.jpg">
+Profile
+<img src="./assets/images/Profile.jpg">
+SinglePost
+<img src="./assets/images/SinglePost.jpg">
