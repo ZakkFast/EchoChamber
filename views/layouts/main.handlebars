@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Echo Chamber</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Roboto Slab Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <!--Import Black Chancery Font-->
+    <link href="https://fonts.cdnfonts.com/css/black-chancery" rel="stylesheet">
+    <!--Import Charter Font-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charter-webfont@4/charter.min.css" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../../public/css/style.css">
+</head>
+
+<body class="grey darken-4">
+    <header>
+        <nav class="grey lighten-2">
+            <div class="nav-wrapper container">
+                <a href="/" class="brand-logo chance grey-text text-darken-4">Echo Chamber</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down roboto four">
+                    <li id="nav-home"><a class="grey-text text-darken-4" href="/">Home</a></li>
+                    <li id="nav-signup"><a class="grey-text text-darken-4" href="/signup">Sign Up</a></li>
+                    <li id="nav-login"><a class="grey-text text-darken-4" href="/login">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav roboto four" id="mobile-demo">
+            <li><a class="grey-text text-darken-4" href="/">Home</a></li>
+            <li><a class="grey-text text-darken-4" href="/dashboard">Dashboard</a></li>
+            <li><a class="grey-text text-darken-4" href="/signup">Sign Up</a></li>
+            <li><a class="grey-text text-darken-4" href="/login">Login</a></li>
+        </ul>
+    </header>
+    
+    <main class="container animate__animated animate__fadeIn" id="main">
+        <div class="row m-5-top card-panel teal lighten-2">
+            <div class="col s12 border-grey corner-med charter grey-text text-lighten-2 p-1 center-align">
+                <h3 class="roboto three zero">Popular Posts</h3>
+            </div>
+        </div>
+
+        <div class="col s12 m7">
+            <div class="card small horizontal">
+              <div class="card-panel grey post-bar">
+                <button class="btn-flat waves-effect waves-light">
+                    <i class="small material-icons">arrow_upward</i>
+                  </button>
+                <h5>1.2k</h5>
+                <button class="btn-flat waves-effect waves-light">
+                    <i class="small material-icons">arrow_downward</i>
+                  </button>
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>posted by username at 55:55</p>
+                  <h2><a href="#">Post Title</a></h2>
+                  <p>I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action valign-wrapper">
+                <i class="small material-icons icon">chat</i><a href="#" class="comments">Comments</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+</body>
+
+</html>
