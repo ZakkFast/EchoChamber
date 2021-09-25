@@ -45,7 +45,7 @@ router.get("/login", (req, res) => {
 });
 
 router.get("/signup", (req, res) => {
-  if (req.session.loggedIn) {
+  if (req.session.logged_in) {
     res.redirect("/");
     return;
   }
@@ -58,7 +58,7 @@ router.get("/post/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ["id", "title", "post_content", "created_at", "karma"],
+    attributes: ["id", "post_title", "post_content", "created_at", "karma"],
     include: [
       {
         model: Comment,
