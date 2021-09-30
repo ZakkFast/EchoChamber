@@ -1,6 +1,7 @@
+{{#each this}}
 <div class="comment-container row">
   <div class="col s10">
-    <p class="left-align">Posted by USERNAME on DATE HERE</p>
+    <p class="left-align">Posted by {{post.user.user_name}} on {{format_date post.date_created}}</p>
     <p class="left-align">Here is my very awesome comment!</p>
     <div class="valign-wrapper">
       <a class="waves-effect waves-teal btn-flat"><i
@@ -13,3 +14,4 @@
     </div>
   </div>
 </div>
+{{/each}}

@@ -4,7 +4,7 @@
       <button class="btn-flat waves-effect waves-light">
         <i class="small material-icons">arrow_upward</i>
       </button>
-      <h5>1.2k</h5>
+      <h5>{{post.karma}}</h5>
       <button class="btn-flat waves-effect waves-light">
         <i class="small material-icons">arrow_downward</i>
       </button>
@@ -12,19 +12,10 @@
     <div class="card-stacked">
       <div class="row">
         <div class="col s12 card-content">
-          <p>posted by username at 55:55</p>
-          <h2><a href="#">Post Title</a></h2>
+          <p>Created by {{post.user.user_name}} on {{format_date post.date_created}}</p>
+          <h2><a href="/post/{{post_id}}">{{post_title}}</a></h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra
-            maecenas accumsan lacus vel facilisis volutpat. Pellentesque diam
-            volutpat commodo sed. Vitae elementum curabitur vitae nunc sed velit
-            dignissim sodales ut. Gravida neque convallis a cras semper auctor
-            neque vitae tempus. Nam libero justo laoreet sit amet cursus sit.
-            Urna molestie at elementum eu facilisis. Nullam vehicula ipsum a
-            arcu cursus vitae congue mauris. Tincidunt vitae semper quis lectus
-            nulla at. Est lorem ipsum dolor sit amet consectetur adipiscing
-            elit.
+            {{post_content}}
           </p>
         </div>
       </div>
@@ -46,7 +37,7 @@
       <!-- comment.handelbars starts here -->
       <div class="row">
         <div class="col s10">
-          {{> comments post.comments}}
+          <p>{{> comments post.comments}}</p>
         </div>
       </div>
     </div>
