@@ -1,3 +1,4 @@
+
 <div class="row m-5-top card-panel teal lighten-2">
   <div
     class="col s12 border-grey corner-med charter grey-text text-lighten-2 p-1 center-align"
@@ -6,6 +7,8 @@
   </div>
 </div>
 
+{{!-- Loop over each object in the comments array --}}
+{{#each posts as |post|}}
 <div class="col s12 m7">
   <div class="card horizontal">
     <div class="card-panel grey post-bar">
@@ -19,16 +22,17 @@
     </div>
     <div class="card-stacked">
       <div class="card-content">
-        <p>posted by username at 55:55</p>
-        <h2><a href="#">Post Title</a></h2>
-        <p>I am good at containing small bits of information.</p>
+        <p>Created by {{post.user.user_name}} on {{format_date post.date_created}}</p>
+        <h2><a href="/post/{{post_id}}">{{post_title}}</a></h2>
+        <p>{{post_content}}</p>
       </div>
       <div class="card-action valign-wrapper">
-        <i class="small material-icons icon">chat</i><a
-          href="#"
+        <i class="small material-icons icon">Comments</i><a
+          href="/post/{{post_id}}"
           class="comments"
-        >Comments</a>
+        >{{comment_text}}</a>
       </div>
     </div>
   </div>
 </div>
+{{/each}}
