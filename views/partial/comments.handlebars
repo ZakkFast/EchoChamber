@@ -1,13 +1,16 @@
 {{#each this}}
 <div class="comment-container row">
   <div class="col s10">
-    <p class="left-align">Posted by {{post.user.user_name}} on {{format_date post.date_created}}</p>
-    <p class="left-align">Here is my very awesome comment!</p>
+    <p class="left-align">Comment by {{post.user.user_name}} on {{format_date post.date_created}}</p>
+    <p class="left-align"><a
+          href="/post/{{post_id}}"
+          class="comments"
+        >{{comment_text}}</a></p>
     <div class="valign-wrapper">
       <a class="waves-effect waves-teal btn-flat"><i
           class="small material-icons"
         >keyboard_double_arrow_up</i></a>
-      <span>349</span>
+      <span>{{post.karma}}</span>
       <a class="waves-effect waves-teal btn-flat"><i
           class="small material-icons"
         >keyboard_double_arrow_down</i></a>
