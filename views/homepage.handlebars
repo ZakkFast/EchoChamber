@@ -23,12 +23,13 @@
     <div class="card-stacked">
       <div class="card-content">
         <p>Created by {{post.user.user_name}} on {{format_date post.date_created}}</p>
-        <h2><a href="/post/{{post_id}}">{{post_title}}</a></h2>
+        <h2><a href="post/{{id}}">{{post_title}}</a></h2> 
+        {{!-- use the line above to change link --}}
         <p>{{post_content}}</p>
       </div>
       <div class="card-action valign-wrapper">
         <i class="small material-icons icon">Comments</i><a
-          href="/post/{{post_id}}"
+          href="/api/posts/{{id}}"
           class="comments"
         >{{comment_text}}</a>
       </div>

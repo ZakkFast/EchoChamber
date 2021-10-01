@@ -1,11 +1,8 @@
 {{#each this}}
 <div class="comment-container row">
   <div class="col s10">
-    <p class="left-align">Comment by {{post.user.user_name}} on {{format_date post.date_created}}</p>
-    <p class="left-align"><a
-          href="/post/{{post_id}}"
-          class="comments"
-        >{{comment_text}}</a></p>
+    <p class="left-align">Comment by {{user.user_name}} on {{format_date created_at}}</p>
+    <p class="left-align">{{comment_text}}</p>
     <div class="valign-wrapper">
       <a class="waves-effect waves-teal btn-flat"><i
           class="small material-icons"
