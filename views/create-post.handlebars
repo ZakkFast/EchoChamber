@@ -7,8 +7,8 @@
           <form id="addPost" method="post" action="/api/postRoutes">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="input_text">Title of Post</label>
-                <input type="text" class="form-control" id="input_text" name="post_title" placeholder="Title of Post">
+                <label for="post_title">Title of Post</label>
+                <input type="text" class="form-control" id="post_title" name="post_title" placeholder="Title of Post">
               </div>
               <div class="form-group col-md-6">
                 <label for="input_text">Created By</label>
@@ -21,7 +21,7 @@
               <label for="email">Email</label>
               <input type="email" class="form-control" id="email" name="email" placeholder="youremail@gmail.com">
             </div>
-            <button class="btn waves-effect waves-light" type="post" name="action"><i class="material-icons right">Create Post</i></button>
+            <button class="btn waves-effect waves-light" type="submit" name="action"><i class="material-icons right">Create Post</i></button>
           </form>
         </div>
       </div>
@@ -30,3 +30,4 @@
 </div>
     </div>
 
+<script src="/js/create-post.js"></script>
