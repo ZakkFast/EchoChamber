@@ -41,7 +41,7 @@ router.get('/', withAuth, (req, res) => {
     })
     .then(dbPostData => {
         const posts = dbPostData.map(post => post.get({ plain: true }))
-        res.render('profile', { post, logged_in: true })
+        res.render('profile', { posts, logged_in: true })
     })
     .catch(err => {
         comnsole.log(err)
