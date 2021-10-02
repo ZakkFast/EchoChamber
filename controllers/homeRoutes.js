@@ -60,7 +60,7 @@ router.get("/post/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ["id", "post_title", "post_content", "created_at", "karma"],
+    attributes: ["id", "post_title", "post_content", "created_at", "karma", "user_id"],
     include: [
       {
         model: Comment,
@@ -81,10 +81,10 @@ router.get("/post/:id", (req, res) => {
         res.status(404).json({ message: "No post found with this id!" });
         return;
       }
-      const post = dbPostData.get({ plain: true });
-
+      const posts = dbPostData.get({ plain: true });
+console.log(posts)
       res.render("view-single-post", {
-        post,
+        posts,
         logged_in: req.session.logged_in,
       });
     })

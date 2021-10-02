@@ -14,8 +14,8 @@
     <div class="card-stacked">
       <div class="row">
         <div class="col s12 card-content">
-          <p>Created by {{post.user.user_name}} on {{format_date post.date_created}}</p>
-          <h2><a href="/post/{{post_id}}">{{post_title}}</a></h2>
+          <p>Created by {{posts.user.user_name}} on {{format_date posts.created_at}}</p>
+          <h2><a href="/api/posts/{{id}}">{{post_title}}</a></h2>
           <p>
             {{post_content}}
             {{!-- {{> posts post.posts}} --}}
@@ -28,7 +28,7 @@
         <form class="col s12">
           <div class="row">
             <div class="input-field col s8">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <textarea name="content" id="textarea1" class="materialize-textarea"></textarea>
               <label for="textarea1">Add a comment..</label>
             </div>
           </div>
@@ -43,7 +43,7 @@
       <!-- comment.handelbars starts here -->
       <div class="row">
         <div class="col s10">
-          <p>{{> comments post.comments}}</p>
+          {{> comments posts.comments}}
         </div>
       </div>
     </div>
