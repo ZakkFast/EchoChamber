@@ -112,15 +112,12 @@ router.post('/login', (req, res) => {
     User.create({
       user_name: req.body.user_name,
       email: req.body.email,
-      pwd: req.body.pwd,
-      twitter: req.body.twitter,
-      github: req.body.github
+      password: req.body.password,
     })
     .then(dbUserData => {
       req.session.save(() => {
         req.session.user_id = dbUserData.id;
         req.session.user_name = dbUserData.user_name;
-        req.session.github = dbUserData.github;
         req.session.logged_in = true;
     
         res.json(dbUserData);
