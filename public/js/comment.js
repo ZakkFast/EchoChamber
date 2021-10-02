@@ -1,7 +1,7 @@
 async function commentFromHandler(event) {
     event.preventDefault();
 
-    const content= document.querySelector('textarea[name="content"]').nodeValue.trim();
+    const content= document.querySelector('textarea[name="content"]').value.trim();
 
     const post_id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
