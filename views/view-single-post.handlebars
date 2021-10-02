@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col s12 card-content">
           <p>Created by {{posts.user.user_name}} on {{format_date posts.created_at}}</p>
-          <h2><a href="/api/posts/{{id}}">{{posts.post_title}}</a></h2>
+          <h2><a href="/api/posts/{{id}}" style="text-decoration: none; color: #00bfa5;">{{posts.post_title}}</a></h2>
           <p>
             {{post_content}}
             {{!-- {{> posts post.posts}} --}}
@@ -34,7 +34,7 @@
           </div>
           <div class="row">
             <div class="col s3">
-              <a class="waves-effect waves-light btn">ADD COMMENT</a>
+              <a class="waves-effect waves-light">ADD COMMENT</a>
             </div>
           </div>
         </form>

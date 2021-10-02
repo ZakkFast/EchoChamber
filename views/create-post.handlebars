@@ -1,13 +1,13 @@
 <div class="container">
-  <h2 class="card-title text-center card-header bg-dark text-light">Create a Post</h2>
+  <h2 class="card-title text-center card-header" style="color: #4db6ac">Create a Post</h2>
   <form id="addPost" method="post" action="/api/postRoutes">
     <div>
       <label for="post_title">Title of Post</label>
-      <input type="text" class="form-control" id="post_title" name="post_title" placeholder=""/>
+      <input type="text" class="form-control text-light" id="post_title" style="color: #eeeeee;" name="post_title" placeholder=""/>
     </div>
     <div>
       <label for="textarea2" class="form-label">Body</label>
-      <textarea class="form-control" id="textarea2" name="textarea2" style="height: 250px" rows="3"></textarea>
+      <textarea class="form-control" id="textarea2" name="textarea2" style="height: 250px; color: #eeeeee !important; padding: 5px;" rows="3"></textarea>
     </div>
       <button class="btn btn-primary waves-effect waves-light" type="submit" name="action">Create Post</button>
   </form>

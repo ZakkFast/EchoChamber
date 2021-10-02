@@ -218,3 +218,7 @@
   border-radius: 5px;
   color: #424242;
 }
+
+.form-control {
+  color:#eeeeee !important; 
+}
