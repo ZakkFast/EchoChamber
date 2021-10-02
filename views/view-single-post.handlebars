@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col s12 card-content">
           <p>Created by {{posts.user.user_name}} on {{format_date posts.created_at}}</p>
-          <h2><a href="/api/posts/{{id}}">{{post_title}}</a></h2>
+          <h2><a href="/api/posts/{{id}}">{{posts.post_title}}</a></h2>
           <p>
             {{post_content}}
             {{!-- {{> posts post.posts}} --}}
