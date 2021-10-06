@@ -3,6 +3,10 @@ const sequelize = require("../../config/connection");
 const withAuth = require("../../utils/auth");
 const router = require("express").Router();
 
+
+// @route   GET /api/posts
+// @desc    Getting all posts from db
+// @access  Public
 router.get("/", (req, res) => {
   Post.findAll({
     attributes: ["id", "post_title", "post_content", "date_created", "karma"],
@@ -29,6 +33,9 @@ router.get("/", (req, res) => {
     });
 });
 
+// @route   POST /api/posts
+// @desc    Creating a new post
+// @access  Private
 router.post("/", withAuth, (req, res) => {
   Post.create({
     post_title: req.body.post_title,
@@ -42,6 +49,9 @@ router.post("/", withAuth, (req, res) => {
     });
 });
 
+// @route   GET /api/posts/:id
+// @desc    Getting a single post by id
+// @access  Public
 router.get("/:id", (req, res) => {
   Post.findOne({
     where: {
@@ -76,6 +86,9 @@ router.get("/:id", (req, res) => {
     });
 });
 
+// @route   PUT /api/posts/:id
+// @desc    Updating a user psot
+// @access  Private
 router.put("/:id", withAuth, (req, res) => {
   Post.update(
     {
@@ -101,6 +114,9 @@ router.put("/:id", withAuth, (req, res) => {
     });
 });
 
+// @route   DELETE /api/posts
+// @desc    Creating a new post
+// @access  Private
 router.delete('/:id', withAuth, (req, res) => {
   Post.destroy({
     where: {
