@@ -55,6 +55,7 @@
   color: #212121;
 }
 
+/* fonts used in application */
 .chance {
   font-family: "BlackChancery", sans-serif;
 }
@@ -67,6 +68,7 @@
   font-family: "Roboto Slab", serif;
 }
 
+/* font weights */
 .three {
   font-weight: 300;
 }
@@ -83,21 +85,13 @@
   height: 100vh;
 }
 
-.zero {
-  padding: 0;
-  margin: 0;
-}
-
-.p-1 {
-  padding: 2.5rem !important;
-}
-
 .first-article {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
+/* standardized margins and padding */
 .m-1 {
   margin: 2.5rem;
 }
@@ -117,11 +111,22 @@
 .m-25-bottom {
   margin-bottom: 2.5rem;
 }
+
 .m-5-top {
   margin-top: 5rem;
   margin-bottom: 2rem;
 }
 
+.p-1 {
+  padding: 2.5rem !important;
+}
+
+.zero {
+  padding: 0;
+  margin: 0;
+}
+
+/* side bar of cards */
 .post-box {
   background-color: #eee;
 }
@@ -131,6 +136,7 @@
   margin-right: 5px;
 }
 
+/* icon padding */
 .icon {
   padding: 5px;
 }
@@ -147,12 +153,14 @@
   border: solid 1px #bdbdbd;
 }
 
+/* containers for login, signup forms */
 .login-container,
 .signup-container {
   background-color: rgba(255, 255, 255, 0.892);
   padding: 8px;
 }
 
+/* css for future developments */
 .bg-video {
   background: url("../video/matrix.mp4");
   position: absolute;
@@ -192,6 +200,7 @@
   color: #212121;
 }
 
+/*  */
 .ql-toolbar .ql-stroke {
   fill: none;
   stroke: #eeeeee !important;
@@ -220,5 +229,5 @@
 }
 
 .form-control {
-  color:#eeeeee !important; 
+  color: #eeeeee !important;
 }
